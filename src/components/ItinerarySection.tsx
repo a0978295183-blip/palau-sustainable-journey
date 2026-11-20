@@ -8,6 +8,7 @@ import {
   Clock,
   CheckCircle2,
   X,
+  AlertTriangle,
 } from 'lucide-react';
 import {
   buildGoogleMapsSearchUrl,
@@ -125,6 +126,17 @@ export function ItinerarySection({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left: Detailed Day Card & Timeline */}
           <div className="lg:col-span-8 bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-xs">
+            {currentDay.alertNotice && (
+              <div
+                role="alert"
+                className="flex items-center gap-3 px-5 py-3.5 bg-amber-50 border-b border-amber-200 text-amber-900"
+              >
+                <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0" aria-hidden="true" />
+                <span className="text-sm sm:text-base font-bold tracking-wide">
+                  {currentDay.alertNotice}
+                </span>
+              </div>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-5 border-b border-slate-200/80">
               <div className="md:col-span-2 aspect-[4/3] md:aspect-auto md:min-h-[240px] bg-slate-100">
                 <SafeImage

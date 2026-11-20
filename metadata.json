@@ -2,5 +2,7 @@
   "name": "帛琉南島永續實踐計畫｜Palau Sustainable Journey",
   "description": "青年海外永續實踐旅行指南：完整收錄 2027/07/29–08/12 帛琉十五日每日行程、景點地圖、SDGs 永續行動、影像畫廊、行前準備清單與旅費管理。",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

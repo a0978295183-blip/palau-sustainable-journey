@@ -42,6 +42,7 @@ export interface ItineraryDay {
   image: string;
   mapQuery: string;
   locationName: string;
+  alertNotice?: string;
 }
 
 export interface FeatureItem {
